@@ -9,7 +9,7 @@ navigate to the project folder and install all required python libraries .
 pip install -r requirements.txt
 ```
 
-for run jupyter notebook set up jupyter notebook first using following link : https://test-jupyter.readthedocs.io/en/latest/install.html 
+for run jupyter notebook : First set up jupyter notebook first using following link : https://test-jupyter.readthedocs.io/en/latest/install.html 
 
 # performing the data cleaning task
 
