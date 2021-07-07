@@ -43,5 +43,7 @@ def clean_data(file):
     print('finish')
     return
 
+if __name__ == "__main__":
+    clean_data('data/xag.csv')
+   #clean_data('https://storage.googleapis.com/ebap-data/technical-test/data-engineer/xag.csv')
 
-clean_data('xag.csv')
