@@ -1,4 +1,5 @@
 import pandas as pd
+import unittest
 
 
 def clean_data(file):
@@ -41,9 +42,13 @@ def clean_data(file):
         ['userIdAsInteger', 'itemIdAsInteger']).sum().reset_index()
     aggratings.to_csv('aggratings.csv', index=False, header=None)
     print('finish')
-    return
+    return True
 
-if __name__ == "__main__":
-    clean_data('data/xag.csv')
-   #clean_data('https://storage.googleapis.com/ebap-data/technical-test/data-engineer/xag.csv')
+# unit test for clean_data function
+class TestDataClean(unittest.TestCase):
+    def test_data_clean(self):
+        self.assertEqual(clean_data('data/xag.csv'), True)
 
+
+if __name__ == '__main__':
+    unittest.main()
